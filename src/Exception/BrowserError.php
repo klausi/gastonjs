@@ -30,7 +30,8 @@ class BrowserError extends ClientError {
    */
   public function javascriptError() {
     //TODO: this need to be check, i don't know yet what comes in response
-    return new JSErrorItem($this->response["error"]["args"][0], $this->response["error"]["args"][1]);
+    //return new JSErrorItem($this->response["error"]["args"][0], $this->response["error"]["args"][1]);
+    return print_r($this->response, TRUE);
   }
 
   /**
